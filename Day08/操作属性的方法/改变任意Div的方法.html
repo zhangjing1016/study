@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:darkblue;
+        }
+    </style> 
+</head>
+<body>
+    <button onclick="setStyle('background','red');">变背景色为红色</button>
+    <button onclick="setStyle('width','100px');">变宽为100px</button>
+    <button onclick="setStyle('fontSize','40px');">变字体大小为40px</button>
+    <button onclick="setStyle('color','green');">变文本颜色为绿色</button>
+    <div class="box" id="box">福</div>
+    <script>
+        /*
+        操作属性的两个方法：.和[]。
+        用.的都可以使用[],但必须个属性加引号；
+        */
+        function setStyle(name,value){
+            document.getElementById('box').style[name] = value;
+        }
+    </script>
+</body>
+</html>

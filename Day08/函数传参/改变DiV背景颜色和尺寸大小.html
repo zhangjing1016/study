@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height:200px;
+            border:honeydew;
+            background-color:deepskyblue;
+        }
+    </style>
+</head>
+<body>
+<button onclick="changeDiv('red','300px','300px');">变红 + 变宽300px + 变高300px</button>
+<button onclick="changeDiv('green','100px','100px');">变绿 + 变宽100px + 变高100px</button>
+<button onclick="changeDiv('yellow','200px','300px');">变黄 + 变高300px</button>
+<button onclick="changeDiv('blue','200px','200px');">变蓝</button>
+<div class="box" id="box"></div>
+<script>
+    /*
+    函数传参
+    function 函数名(变量1，变量2，...){
+        
+    }
+    */
+ function changeDiv(color,width,height){
+    document.getElementById('box').style.background= color;
+    document.getElementById('box').style.width= width;
+    document.getElementById('box').style.height= height;
+ }
+</script>
+</body>
+</html>
