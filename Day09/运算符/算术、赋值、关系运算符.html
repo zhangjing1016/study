@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          /*
+            算术：+ 加、- 减、* 乘、/ 除、% 取模
+            赋值：=、+=、-=、*=、/=、%=
+            关系：<、>、<=、>=、==、===、!=、!==
+        */
+        //秒转时间
+        var nTime = 1314;
+        var sTime = parseInt(nTime/60) + "分" + parseInt(nTime%60) + "秒";
+        console.log(sTime);
+        var a = 10;
+
+        a += 20;  // 等价于a = a + 20 = 10 + 20 = 30
+        console.log(a); // 30
+
+        a %= 2; // 等价于 a = a % 2 = 30%2 = 0
+
+        console.log(a);
+
+        // ==（等于）、===（全等于）、!=（不等于）、!==（不全等于）
+
+        var x = 10;
+        var y = '10';
+
+        // == 判断两边是否相等，如果相等，则为真，否则为假。
+        if(x == y)
+        {
+            console.log('x等于y');
+        }
+        else
+        {
+            console.log('x不等于y');
+        }
+
+        // != 判断两边是否不相等，如果不相等，则为真，否则为假。
+        if(x != y)
+        {
+            console.log('x不等于y');
+        }
+        else
+        {
+            console.log('x等于y');
+        }
+
+        // === 判断两边是否全相等（不仅值要相等，而且类型也要相同），如果全相等，则为真，否则为假。
+        if(x === y)
+        {
+            console.log('x全等于y');
+        }
+        else
+        {
+            console.log('x不全等于y');
+        }
+
+        // !== 判断两边是否不全相等（不仅值要相等，而且类型也要相同），如果不全相等，则为真，否则为假。
+        if(x !== y)
+        {
+            console.log('x不全等于y');
+        }
+        else
+        {
+            console.log('x全等于y');
+        }
+    </script>
+</body>
+</html>

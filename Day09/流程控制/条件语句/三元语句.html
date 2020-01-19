@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = 10;
+            var b = 20;
+            var c;
+
+            if(a > b)
+            {
+                c = a + b;
+            }
+            else
+            {
+                c = a - b;
+            }
+            console.log(c); // -10
+
+            a > b ? c = a + b : c = a - b; // 如果a>b为真执行？后面的，否则执行：后面的。
+            console.log(c); // -10
+
+            // 进一步简写
+            c = a > b ? a + b : a - b;
+            console.log(c); // -10
+
+        </script>
+    </body>
+</html>

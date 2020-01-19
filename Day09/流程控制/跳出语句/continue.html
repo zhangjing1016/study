@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 求 1 + 2 + 3 + 4  
+
+            var sum = 0;
+            for(var i = 1; i <= 4; i++)
+            {
+                sum += i;
+            }
+
+            console.log(sum); // 10
+
+
+            var sum = 0;
+            for(var i = 1; i <= 4; i++)
+            {
+                if(i == 3)
+                {
+                    continue;  // 跳出当前循环，但会继续下一次循环
+                }
+                sum += i;
+            }
+
+
+            // i = 1 sum = 1
+            // i = 2 sum = 3
+            // i = 3 ，if条件为真，执行continue，跳出当前循环，但会继续下一次循环
+            // i = 4 sum = 3 + 4 = 7
+            console.log(sum); // 7
+
+        </script>
+    </body>
+</html>
